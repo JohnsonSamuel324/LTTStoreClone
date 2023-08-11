@@ -1,0 +1,33 @@
+body{
+    background-color: #191919;
+}
+
+body * {
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav * {
+    font-size: 1.25rem;
+}
+
+.middle-nav * {
+    margin: 0px 1rem;
+}
+
+.right-nav * {
+    margin: 0px 2.5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#current {
+    text-decoration: underline;
+}
