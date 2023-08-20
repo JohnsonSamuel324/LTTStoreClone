@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9803a2cab8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <title>Linus Tech Tips Store</title>
 </head>
 <body>
@@ -23,21 +24,60 @@
                 <a class="nav-item" href="#">LTX Exclusive</a>
             </div>
             <div class="right-nav">
+                <!-- Changes between sun and moon for site light/dark mode -->
                 <a href="#">
-                    <i class="fa fa-sun-o" aria-hidden="true"></i>
+                    <i class="light-mode fa-regular fa-sun"></i>
                 </a>
                 <a href="#">
-                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
                 <a href="#">
-                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <i class="fa-regular fa-user"></i>
                 </a>
                 <a href="#">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
                 </a>
             </div>
         </nav>
     </header>
+    <div class="featuredSlideshow">
+        <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="./assets/lttstore_Indoor_Hoodie_Banner_Desktop_2000x.webp" alt=""></div>
+    <div class="swiper-slide"><img src="./assets/lttstore_Grey_Multi_Nep_Banner_Desktop_02_2000x.webp" alt=""></div>
+    <div class="swiper-slide"><img src="./assets/Sticklocks_Banner_-_Desktop_1780x.webp" alt=""></div>
+    <div class="swiper-slide"><img src="./assets/PCMR_Banner_-_Desktop_1780x.webp" alt=""></div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+    </div>
+
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".swiper", {
+            // Optional parameters
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: ".swiper-pagination",
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 </html>
